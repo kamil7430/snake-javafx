@@ -23,7 +23,9 @@ public class VisualBoard {
         Tile first = board.getSnake().getBody().getFirst();
         this.board[first.getCoords().x()][first.getCoords().y()] = BoardEntity.SnakeHead;
 
-        Tile last = board.getSnake().getBody().getLast();
-        this.board[last.getCoords().x()][last.getCoords().y()] = BoardEntity.SnakeTail;
+        if (board.getSnake().getBody().size() > 1) {
+            Tile last = board.getSnake().getBody().getLast();
+            this.board[last.getCoords().x()][last.getCoords().y()] = BoardEntity.SnakeTail;
+        }
     }
 }

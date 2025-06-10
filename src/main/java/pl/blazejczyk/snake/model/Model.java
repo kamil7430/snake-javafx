@@ -7,8 +7,8 @@ public class Model {
     private final Board board;
     private final ModelMechanics modelMechanics;
 
-    public Model(Board board) {
-        this.board = board;
+    public Model() {
+        this.board = new Board(10, 10); // TODO: jakoś uzmiennić
         this.modelMechanics = new ModelMechanics(this.board);
     }
 
