@@ -17,4 +17,9 @@ public class Model {
     public void changeSnakeFacingDirection(Direction direction) {
         modelMechanics.changeSnakeFacingDirection(direction);
     }
+
+    // TODO: ogarnąć to
+    public void run() {
+        modelMechanics.prepareGameBoard();
+    }
 }

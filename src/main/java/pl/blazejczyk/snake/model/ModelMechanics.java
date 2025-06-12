@@ -31,4 +31,8 @@ public class ModelMechanics {
 
         return true;
     }
+
+    public void prepareGameBoard() {
+        boardMechanics.placeNewFood();
+    }
 }

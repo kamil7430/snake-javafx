@@ -16,6 +16,7 @@ public class Controller {
 
     public void runGame() {
         // TODO: run model and view
+        model.run();
         view.run();
     }
 

@@ -28,7 +28,7 @@ public class Board {
                 tiles.put(coords, new Tile(coords));
             }
         }
-        this.snake = new Snake(Direction.Right, getRandomTile());
+        this.snake = new Snake(Direction.Down, getRandomTile());
     }
 
     public Tile getRandomTile() {
