@@ -1,16 +1,19 @@
-package pl.blazejczyk.snake.view;
+package pl.blazejczyk.snake.view.utilities;
 
 import lombok.Getter;
 import pl.blazejczyk.snake.model.utilities.Board;
 import pl.blazejczyk.snake.model.utilities.Tile;
-import pl.blazejczyk.snake.view.utilities.BoardEntity;
 
 @Getter
 public class VisualBoard {
+    private final int width;
+    private final int height;
     private final BoardEntity[][] board;
 
     public VisualBoard(Board board) {
-        this.board = new BoardEntity[board.getWidth()][board.getHeight()];
+        this.width = board.getWidth();
+        this.height = board.getHeight();
+        this.board = new BoardEntity[this.width][this.height];
 
         board.getTiles().forEach((coords, tile) -> {
             this.board[coords.x()][coords.y()] = tile.isHasFood() ? BoardEntity.Food : BoardEntity.Empty;

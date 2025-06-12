@@ -1,9 +1,11 @@
 package pl.blazejczyk.snake.model;
 
+import lombok.Getter;
 import pl.blazejczyk.snake.model.utilities.Board;
 import pl.blazejczyk.snake.utilities.Direction;
 
 public class Model {
+    @Getter
     private final Board board;
     private final ModelMechanics modelMechanics;
 
