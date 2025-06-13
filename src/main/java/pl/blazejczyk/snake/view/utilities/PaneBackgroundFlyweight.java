@@ -4,7 +4,7 @@ import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.paint.Color;
 
-public class RegionBackgroundFlyweight {
+public class PaneBackgroundFlyweight {
     public static Background BLACK;
     public static Background GRAY;
     public static Background GREEN;

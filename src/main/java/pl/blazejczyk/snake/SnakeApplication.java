@@ -4,12 +4,10 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 import pl.blazejczyk.snake.controller.Controller;
 
-import java.io.IOException;
-
 public class SnakeApplication extends Application {
 
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage stage) {
         Controller controller = new Controller(stage);
         controller.runGame();
     }
